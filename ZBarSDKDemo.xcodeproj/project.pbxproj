@@ -1,0 +1,567 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		C6BECD2A1BAFC956002AF4DA /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = C6BECD291BAFC956002AF4DA /* main.m */; };
+		C6BECD2D1BAFC956002AF4DA /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = C6BECD2C1BAFC956002AF4DA /* AppDelegate.m */; };
+		C6BECD301BAFC956002AF4DA /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C6BECD2F1BAFC956002AF4DA /* ViewController.m */; };
+		C6BECD331BAFC956002AF4DA /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C6BECD311BAFC956002AF4DA /* Main.storyboard */; };
+		C6BECD351BAFC956002AF4DA /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C6BECD341BAFC956002AF4DA /* Images.xcassets */; };
+		C6BECD381BAFC956002AF4DA /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = C6BECD361BAFC956002AF4DA /* LaunchScreen.xib */; };
+		C6BECD441BAFC956002AF4DA /* ZBarSDKDemoTests.m in Sources */ = {isa = PBXBuildFile; fileRef = C6BECD431BAFC956002AF4DA /* ZBarSDKDemoTests.m */; };
+		C6BECD6B1BAFC988002AF4DA /* libzbar.a in Frameworks */ = {isa = PBXBuildFile; fileRef = C6BECD651BAFC988002AF4DA /* libzbar.a */; };
+		C6BECD6C1BAFC988002AF4DA /* zbar-back.png in Resources */ = {isa = PBXBuildFile; fileRef = C6BECD671BAFC988002AF4DA /* zbar-back.png */; };
+		C6BECD6D1BAFC988002AF4DA /* zbar-help.html in Resources */ = {isa = PBXBuildFile; fileRef = C6BECD681BAFC988002AF4DA /* zbar-help.html */; };
+		C6BECD6E1BAFC988002AF4DA /* zbar-helpicons.png in Resources */ = {isa = PBXBuildFile; fileRef = C6BECD691BAFC988002AF4DA /* zbar-helpicons.png */; };
+		C6BECD6F1BAFC988002AF4DA /* zbar-samples.png in Resources */ = {isa = PBXBuildFile; fileRef = C6BECD6A1BAFC988002AF4DA /* zbar-samples.png */; };
+		C6BECD711BAFC9A6002AF4DA /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C6BECD701BAFC9A6002AF4DA /* AVFoundation.framework */; };
+		C6BECD731BAFC9AC002AF4DA /* CoreMedia.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C6BECD721BAFC9AC002AF4DA /* CoreMedia.framework */; };
+		C6BECD751BAFC9B4002AF4DA /* CoreVideo.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C6BECD741BAFC9B4002AF4DA /* CoreVideo.framework */; };
+		C6BECD771BAFC9C2002AF4DA /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C6BECD761BAFC9C2002AF4DA /* QuartzCore.framework */; };
+		C6BECD791BAFC9CB002AF4DA /* libiconv.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = C6BECD781BAFC9CB002AF4DA /* libiconv.dylib */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		C6BECD3E1BAFC956002AF4DA /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = C6BECD1C1BAFC956002AF4DA /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = C6BECD231BAFC956002AF4DA;
+			remoteInfo = ZBarSDKDemo;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		C6BECD241BAFC956002AF4DA /* ZBarSDKDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ZBarSDKDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		C6BECD281BAFC956002AF4DA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		C6BECD291BAFC956002AF4DA /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		C6BECD2B1BAFC956002AF4DA /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		C6BECD2C1BAFC956002AF4DA /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		C6BECD2E1BAFC956002AF4DA /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		C6BECD2F1BAFC956002AF4DA /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		C6BECD321BAFC956002AF4DA /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		C6BECD341BAFC956002AF4DA /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		C6BECD371BAFC956002AF4DA /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
+		C6BECD3D1BAFC956002AF4DA /* ZBarSDKDemoTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ZBarSDKDemoTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		C6BECD421BAFC956002AF4DA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		C6BECD431BAFC956002AF4DA /* ZBarSDKDemoTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ZBarSDKDemoTests.m; sourceTree = "<group>"; };
+		C6BECD511BAFC988002AF4DA /* Decoder.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Decoder.h; sourceTree = "<group>"; };
+		C6BECD521BAFC988002AF4DA /* Exception.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Exception.h; sourceTree = "<group>"; };
+		C6BECD531BAFC988002AF4DA /* Image.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Image.h; sourceTree = "<group>"; };
+		C6BECD541BAFC988002AF4DA /* ImageScanner.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ImageScanner.h; sourceTree = "<group>"; };
+		C6BECD551BAFC988002AF4DA /* Processor.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Processor.h; sourceTree = "<group>"; };
+		C6BECD561BAFC988002AF4DA /* Scanner.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Scanner.h; sourceTree = "<group>"; };
+		C6BECD571BAFC988002AF4DA /* Symbol.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Symbol.h; sourceTree = "<group>"; };
+		C6BECD581BAFC988002AF4DA /* Video.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Video.h; sourceTree = "<group>"; };
+		C6BECD591BAFC988002AF4DA /* Window.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Window.h; sourceTree = "<group>"; };
+		C6BECD5A1BAFC988002AF4DA /* zbar.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = zbar.h; sourceTree = "<group>"; };
+		C6BECD5B1BAFC988002AF4DA /* ZBarCameraSimulator.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZBarCameraSimulator.h; sourceTree = "<group>"; };
+		C6BECD5C1BAFC988002AF4DA /* ZBarCaptureReader.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZBarCaptureReader.h; sourceTree = "<group>"; };
+		C6BECD5D1BAFC988002AF4DA /* ZBarHelpController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZBarHelpController.h; sourceTree = "<group>"; };
+		C6BECD5E1BAFC988002AF4DA /* ZBarImage.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZBarImage.h; sourceTree = "<group>"; };
+		C6BECD5F1BAFC988002AF4DA /* ZBarImageScanner.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZBarImageScanner.h; sourceTree = "<group>"; };
+		C6BECD601BAFC988002AF4DA /* ZBarReaderController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZBarReaderController.h; sourceTree = "<group>"; };
+		C6BECD611BAFC988002AF4DA /* ZBarReaderView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZBarReaderView.h; sourceTree = "<group>"; };
+		C6BECD621BAFC988002AF4DA /* ZBarReaderViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZBarReaderViewController.h; sourceTree = "<group>"; };
+		C6BECD631BAFC988002AF4DA /* ZBarSDK.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZBarSDK.h; sourceTree = "<group>"; };
+		C6BECD641BAFC988002AF4DA /* ZBarSymbol.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZBarSymbol.h; sourceTree = "<group>"; };
+		C6BECD651BAFC988002AF4DA /* libzbar.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libzbar.a; sourceTree = "<group>"; };
+		C6BECD671BAFC988002AF4DA /* zbar-back.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "zbar-back.png"; sourceTree = "<group>"; };
+		C6BECD681BAFC988002AF4DA /* zbar-help.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; path = "zbar-help.html"; sourceTree = "<group>"; };
+		C6BECD691BAFC988002AF4DA /* zbar-helpicons.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "zbar-helpicons.png"; sourceTree = "<group>"; };
+		C6BECD6A1BAFC988002AF4DA /* zbar-samples.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "zbar-samples.png"; sourceTree = "<group>"; };
+		C6BECD701BAFC9A6002AF4DA /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = System/Library/Frameworks/AVFoundation.framework; sourceTree = SDKROOT; };
+		C6BECD721BAFC9AC002AF4DA /* CoreMedia.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreMedia.framework; path = System/Library/Frameworks/CoreMedia.framework; sourceTree = SDKROOT; };
+		C6BECD741BAFC9B4002AF4DA /* CoreVideo.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreVideo.framework; path = System/Library/Frameworks/CoreVideo.framework; sourceTree = SDKROOT; };
+		C6BECD761BAFC9C2002AF4DA /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
+		C6BECD781BAFC9CB002AF4DA /* libiconv.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libiconv.dylib; path = usr/lib/libiconv.dylib; sourceTree = SDKROOT; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		C6BECD211BAFC956002AF4DA /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C6BECD791BAFC9CB002AF4DA /* libiconv.dylib in Frameworks */,
+				C6BECD771BAFC9C2002AF4DA /* QuartzCore.framework in Frameworks */,
+				C6BECD751BAFC9B4002AF4DA /* CoreVideo.framework in Frameworks */,
+				C6BECD731BAFC9AC002AF4DA /* CoreMedia.framework in Frameworks */,
+				C6BECD711BAFC9A6002AF4DA /* AVFoundation.framework in Frameworks */,
+				C6BECD6B1BAFC988002AF4DA /* libzbar.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C6BECD3A1BAFC956002AF4DA /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		C6BECD1B1BAFC956002AF4DA = {
+			isa = PBXGroup;
+			children = (
+				C6BECD781BAFC9CB002AF4DA /* libiconv.dylib */,
+				C6BECD761BAFC9C2002AF4DA /* QuartzCore.framework */,
+				C6BECD741BAFC9B4002AF4DA /* CoreVideo.framework */,
+				C6BECD721BAFC9AC002AF4DA /* CoreMedia.framework */,
+				C6BECD701BAFC9A6002AF4DA /* AVFoundation.framework */,
+				C6BECD261BAFC956002AF4DA /* ZBarSDKDemo */,
+				C6BECD401BAFC956002AF4DA /* ZBarSDKDemoTests */,
+				C6BECD251BAFC956002AF4DA /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		C6BECD251BAFC956002AF4DA /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				C6BECD241BAFC956002AF4DA /* ZBarSDKDemo.app */,
+				C6BECD3D1BAFC956002AF4DA /* ZBarSDKDemoTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		C6BECD261BAFC956002AF4DA /* ZBarSDKDemo */ = {
+			isa = PBXGroup;
+			children = (
+				C6BECD4D1BAFC988002AF4DA /* ZBarSDK */,
+				C6BECD2B1BAFC956002AF4DA /* AppDelegate.h */,
+				C6BECD2C1BAFC956002AF4DA /* AppDelegate.m */,
+				C6BECD2E1BAFC956002AF4DA /* ViewController.h */,
+				C6BECD2F1BAFC956002AF4DA /* ViewController.m */,
+				C6BECD311BAFC956002AF4DA /* Main.storyboard */,
+				C6BECD341BAFC956002AF4DA /* Images.xcassets */,
+				C6BECD361BAFC956002AF4DA /* LaunchScreen.xib */,
+				C6BECD271BAFC956002AF4DA /* Supporting Files */,
+			);
+			path = ZBarSDKDemo;
+			sourceTree = "<group>";
+		};
+		C6BECD271BAFC956002AF4DA /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				C6BECD281BAFC956002AF4DA /* Info.plist */,
+				C6BECD291BAFC956002AF4DA /* main.m */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		C6BECD401BAFC956002AF4DA /* ZBarSDKDemoTests */ = {
+			isa = PBXGroup;
+			children = (
+				C6BECD431BAFC956002AF4DA /* ZBarSDKDemoTests.m */,
+				C6BECD411BAFC956002AF4DA /* Supporting Files */,
+			);
+			path = ZBarSDKDemoTests;
+			sourceTree = "<group>";
+		};
+		C6BECD411BAFC956002AF4DA /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				C6BECD421BAFC956002AF4DA /* Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		C6BECD4D1BAFC988002AF4DA /* ZBarSDK */ = {
+			isa = PBXGroup;
+			children = (
+				C6BECD4E1BAFC988002AF4DA /* Headers */,
+				C6BECD651BAFC988002AF4DA /* libzbar.a */,
+				C6BECD661BAFC988002AF4DA /* Resources */,
+			);
+			path = ZBarSDK;
+			sourceTree = "<group>";
+		};
+		C6BECD4E1BAFC988002AF4DA /* Headers */ = {
+			isa = PBXGroup;
+			children = (
+				C6BECD4F1BAFC988002AF4DA /* ZBarSDK */,
+			);
+			path = Headers;
+			sourceTree = "<group>";
+		};
+		C6BECD4F1BAFC988002AF4DA /* ZBarSDK */ = {
+			isa = PBXGroup;
+			children = (
+				C6BECD501BAFC988002AF4DA /* zbar */,
+				C6BECD5A1BAFC988002AF4DA /* zbar.h */,
+				C6BECD5B1BAFC988002AF4DA /* ZBarCameraSimulator.h */,
+				C6BECD5C1BAFC988002AF4DA /* ZBarCaptureReader.h */,
+				C6BECD5D1BAFC988002AF4DA /* ZBarHelpController.h */,
+				C6BECD5E1BAFC988002AF4DA /* ZBarImage.h */,
+				C6BECD5F1BAFC988002AF4DA /* ZBarImageScanner.h */,
+				C6BECD601BAFC988002AF4DA /* ZBarReaderController.h */,
+				C6BECD611BAFC988002AF4DA /* ZBarReaderView.h */,
+				C6BECD621BAFC988002AF4DA /* ZBarReaderViewController.h */,
+				C6BECD631BAFC988002AF4DA /* ZBarSDK.h */,
+				C6BECD641BAFC988002AF4DA /* ZBarSymbol.h */,
+			);
+			path = ZBarSDK;
+			sourceTree = "<group>";
+		};
+		C6BECD501BAFC988002AF4DA /* zbar */ = {
+			isa = PBXGroup;
+			children = (
+				C6BECD511BAFC988002AF4DA /* Decoder.h */,
+				C6BECD521BAFC988002AF4DA /* Exception.h */,
+				C6BECD531BAFC988002AF4DA /* Image.h */,
+				C6BECD541BAFC988002AF4DA /* ImageScanner.h */,
+				C6BECD551BAFC988002AF4DA /* Processor.h */,
+				C6BECD561BAFC988002AF4DA /* Scanner.h */,
+				C6BECD571BAFC988002AF4DA /* Symbol.h */,
+				C6BECD581BAFC988002AF4DA /* Video.h */,
+				C6BECD591BAFC988002AF4DA /* Window.h */,
+			);
+			path = zbar;
+			sourceTree = "<group>";
+		};
+		C6BECD661BAFC988002AF4DA /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				C6BECD671BAFC988002AF4DA /* zbar-back.png */,
+				C6BECD681BAFC988002AF4DA /* zbar-help.html */,
+				C6BECD691BAFC988002AF4DA /* zbar-helpicons.png */,
+				C6BECD6A1BAFC988002AF4DA /* zbar-samples.png */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		C6BECD231BAFC956002AF4DA /* ZBarSDKDemo */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = C6BECD471BAFC956002AF4DA /* Build configuration list for PBXNativeTarget "ZBarSDKDemo" */;
+			buildPhases = (
+				C6BECD201BAFC956002AF4DA /* Sources */,
+				C6BECD211BAFC956002AF4DA /* Frameworks */,
+				C6BECD221BAFC956002AF4DA /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = ZBarSDKDemo;
+			productName = ZBarSDKDemo;
+			productReference = C6BECD241BAFC956002AF4DA /* ZBarSDKDemo.app */;
+			productType = "com.apple.product-type.application";
+		};
+		C6BECD3C1BAFC956002AF4DA /* ZBarSDKDemoTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = C6BECD4A1BAFC956002AF4DA /* Build configuration list for PBXNativeTarget "ZBarSDKDemoTests" */;
+			buildPhases = (
+				C6BECD391BAFC956002AF4DA /* Sources */,
+				C6BECD3A1BAFC956002AF4DA /* Frameworks */,
+				C6BECD3B1BAFC956002AF4DA /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				C6BECD3F1BAFC956002AF4DA /* PBXTargetDependency */,
+			);
+			name = ZBarSDKDemoTests;
+			productName = ZBarSDKDemoTests;
+			productReference = C6BECD3D1BAFC956002AF4DA /* ZBarSDKDemoTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		C6BECD1C1BAFC956002AF4DA /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0640;
+				ORGANIZATIONNAME = tentinet;
+				TargetAttributes = {
+					C6BECD231BAFC956002AF4DA = {
+						CreatedOnToolsVersion = 6.4;
+					};
+					C6BECD3C1BAFC956002AF4DA = {
+						CreatedOnToolsVersion = 6.4;
+						TestTargetID = C6BECD231BAFC956002AF4DA;
+					};
+				};
+			};
+			buildConfigurationList = C6BECD1F1BAFC956002AF4DA /* Build configuration list for PBXProject "ZBarSDKDemo" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = C6BECD1B1BAFC956002AF4DA;
+			productRefGroup = C6BECD251BAFC956002AF4DA /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				C6BECD231BAFC956002AF4DA /* ZBarSDKDemo */,
+				C6BECD3C1BAFC956002AF4DA /* ZBarSDKDemoTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		C6BECD221BAFC956002AF4DA /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C6BECD331BAFC956002AF4DA /* Main.storyboard in Resources */,
+				C6BECD6D1BAFC988002AF4DA /* zbar-help.html in Resources */,
+				C6BECD6F1BAFC988002AF4DA /* zbar-samples.png in Resources */,
+				C6BECD6E1BAFC988002AF4DA /* zbar-helpicons.png in Resources */,
+				C6BECD6C1BAFC988002AF4DA /* zbar-back.png in Resources */,
+				C6BECD381BAFC956002AF4DA /* LaunchScreen.xib in Resources */,
+				C6BECD351BAFC956002AF4DA /* Images.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C6BECD3B1BAFC956002AF4DA /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		C6BECD201BAFC956002AF4DA /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C6BECD301BAFC956002AF4DA /* ViewController.m in Sources */,
+				C6BECD2D1BAFC956002AF4DA /* AppDelegate.m in Sources */,
+				C6BECD2A1BAFC956002AF4DA /* main.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C6BECD391BAFC956002AF4DA /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C6BECD441BAFC956002AF4DA /* ZBarSDKDemoTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		C6BECD3F1BAFC956002AF4DA /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = C6BECD231BAFC956002AF4DA /* ZBarSDKDemo */;
+			targetProxy = C6BECD3E1BAFC956002AF4DA /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		C6BECD311BAFC956002AF4DA /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				C6BECD321BAFC956002AF4DA /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		C6BECD361BAFC956002AF4DA /* LaunchScreen.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				C6BECD371BAFC956002AF4DA /* Base */,
+			);
+			name = LaunchScreen.xib;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		C6BECD451BAFC956002AF4DA /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		C6BECD461BAFC956002AF4DA /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		C6BECD481BAFC956002AF4DA /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer: Ten Tentinet (7DCN4A87KT)";
+				INFOPLIST_FILE = ZBarSDKDemo/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/ZBarSDKDemo/ZBarSDK",
+				);
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "e2d2e76c-5978-4d3b-b8c2-179fbf327a9d";
+			};
+			name = Debug;
+		};
+		C6BECD491BAFC956002AF4DA /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer: Ten Tentinet (7DCN4A87KT)";
+				INFOPLIST_FILE = ZBarSDKDemo/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/ZBarSDKDemo/ZBarSDK",
+				);
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "e2d2e76c-5978-4d3b-b8c2-179fbf327a9d";
+			};
+			name = Release;
+		};
+		C6BECD4B1BAFC956002AF4DA /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+				);
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = ZBarSDKDemoTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/ZBarSDKDemo.app/ZBarSDKDemo";
+			};
+			name = Debug;
+		};
+		C6BECD4C1BAFC956002AF4DA /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = ZBarSDKDemoTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/ZBarSDKDemo.app/ZBarSDKDemo";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		C6BECD1F1BAFC956002AF4DA /* Build configuration list for PBXProject "ZBarSDKDemo" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C6BECD451BAFC956002AF4DA /* Debug */,
+				C6BECD461BAFC956002AF4DA /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		C6BECD471BAFC956002AF4DA /* Build configuration list for PBXNativeTarget "ZBarSDKDemo" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C6BECD481BAFC956002AF4DA /* Debug */,
+				C6BECD491BAFC956002AF4DA /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		C6BECD4A1BAFC956002AF4DA /* Build configuration list for PBXNativeTarget "ZBarSDKDemoTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C6BECD4B1BAFC956002AF4DA /* Debug */,
+				C6BECD4C1BAFC956002AF4DA /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = C6BECD1C1BAFC956002AF4DA /* Project object */;
+}
